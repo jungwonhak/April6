@@ -1,9 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/addfoodbackground"
     tools:context="com.example.neros.april6_assignment.NewRestActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:background="#64c3ff"
+        android:text="아래에 정보를 입력하세요"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TableLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c8ffffff">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ae6500"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="이름" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ae6500"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="종류" />
+
+
+            <GridLayout
+                android:columnCount="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/chickenRadioBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/chicken"/>
+                <RadioButton
+                    android:id="@+id/pizzaRadioBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pizza"/>
+                <RadioButton
+                    android:id="@+id/hamburgerRadioBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/hamburger"/>
+                <RadioButton
+                    android:id="@+id/buritoRadioBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/burito"/>
+                <RadioButton
+                    android:id="@+id/sandwichRadioBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/sandwich"/>
+                <RadioButton
+                    android:id="@+id/korchickenRadioBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/korchicken"/>
+            </GridLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ae6500"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="전화번호" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ae6500"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="1번 메뉴" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ae6500"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="2번 메뉴" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ae6500"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="3번 메뉴" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="#ae6500"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="홈페이지" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:background="#f8bbd0"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="취소"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="추가"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
