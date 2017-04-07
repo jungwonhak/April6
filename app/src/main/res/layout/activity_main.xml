@@ -8,9 +8,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.neros.april6_assignment.MainActivity">
 
-
-
-
     <LinearLayout
         android:padding="5dp"
         android:orientation="horizontal"

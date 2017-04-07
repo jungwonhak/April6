@@ -110,11 +110,12 @@
                 android:text="전화번호" />
 
             <EditText
-                android:hint="-빼고 입력"
                 android:id="@+id/telEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:hint="-빼고 입력"
+                android:inputType="number" />
         </TableRow>
 
         <TableRow>
@@ -187,7 +188,8 @@
                 android:id="@+id/homepageEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:inputType="textUri" />
         </TableRow>
 
     </TableLayout>

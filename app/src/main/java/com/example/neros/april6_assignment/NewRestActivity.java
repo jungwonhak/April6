@@ -52,20 +52,13 @@ public class NewRestActivity extends AppCompatActivity {
         RadioButton rb = (RadioButton) v;
         rb.setChecked(true);
         switch (rb.getId()){
-            case R.id.chickenRadioBtn:
-                checked = 0; break;
-            case R.id.pizzaRadioBtn:
-                checked = 1; break;
-            case R.id.hamburgerRadioBtn:
-                checked = 2; break;
-            case R.id.buritoRadioBtn:
-                checked = 3; break;
-            case R.id.sandwichRadioBtn:
-                checked = 4; break;
-            case R.id.korchickenRadioBtn:
-                checked = 5; break;
+            case R.id.chickenRadioBtn: checked = 0; break;
+            case R.id.pizzaRadioBtn: checked = 1; break;
+            case R.id.hamburgerRadioBtn: checked = 2; break;
+            case R.id.buritoRadioBtn: checked = 3; break;
+            case R.id.sandwichRadioBtn: checked = 4; break;
+            case R.id.korchickenRadioBtn: checked = 5; break;
             default:
-
         }
     }
 
@@ -85,12 +78,10 @@ public class NewRestActivity extends AppCompatActivity {
             Toast.makeText(this, "정보를 모두 입력해주세요", Toast.LENGTH_SHORT).show();
             return;
         }
-
         Calendar calendar = Calendar.getInstance();
 
         String[] menu = {menu1EditText.getText().toString(), menu2EditText.getText().toString(), menu3EditText.getText().toString()};
         int[] regDate = {calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH)};
-
 
         Rest newRest = new Rest(nameEditText.getText().toString(),
                                 telEditText.getText().toString(),

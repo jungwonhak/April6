@@ -49,38 +49,20 @@ public class RestInfoActivity extends AppCompatActivity {
     }
 
     private void showRest(Rest thisRest) {
-        /*
-        public int getCategory(){ return this.category; }*/
-
         restNameTextView.setText(thisRest.getName());
         menu1TextView.setText(thisRest.getMenu1());
         menu2TextView.setText(thisRest.getMenu2());
         menu3TextView.setText(thisRest.getMenu3());
         telTextView.setText(thisRest.getPhone());
         homepageTextView.setText(thisRest.getHomepage());
-
         regDateTextView.setText(String.valueOf(thisRest.getYear()) + "년 " + String.valueOf(thisRest.getMonth()) + "월 " + String.valueOf(thisRest.getDay() + "일"));
-
         switch (thisRest.getCategory()) {
-            case 0:
-                categoryImageView.setImageResource(R.drawable.chicken);
-                break;
-            case 1:
-                categoryImageView.setImageResource(R.drawable.pizza);
-                break;
-            case 2:
-                categoryImageView.setImageResource(R.drawable.hamburger);
-                break;
-            case 3:
-                categoryImageView.setImageResource(R.drawable.burito);
-                break;
-            case 4:
-                categoryImageView.setImageResource(R.drawable.sandwich);
-                break;
-            case 5:
-                categoryImageView.setImageResource(R.drawable.korchicken);
-                break;
-
+            case 0: categoryImageView.setImageResource(R.drawable.chicken); break;
+            case 1: categoryImageView.setImageResource(R.drawable.pizza); break;
+            case 2: categoryImageView.setImageResource(R.drawable.hamburger); break;
+            case 3: categoryImageView.setImageResource(R.drawable.burito); break;
+            case 4: categoryImageView.setImageResource(R.drawable.sandwich); break;
+            case 5: categoryImageView.setImageResource(R.drawable.korchicken); break;
             default:
         }
     }
@@ -94,7 +76,5 @@ public class RestInfoActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClickBackBtn(View v){
-        finish();
-    }
+    public void onClickBackBtn(View v){ finish(); }
 }
