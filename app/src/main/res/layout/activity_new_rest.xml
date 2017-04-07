@@ -39,6 +39,7 @@
                 android:text="이름" />
 
             <EditText
+                android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -61,31 +62,37 @@
                 android:layout_height="wrap_content">
                 <RadioButton
                     android:id="@+id/chickenRadioBtn"
+                    android:onClick="onClickRadioBtn"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/chicken"/>
                 <RadioButton
                     android:id="@+id/pizzaRadioBtn"
+                    android:onClick="onClickRadioBtn"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/pizza"/>
                 <RadioButton
                     android:id="@+id/hamburgerRadioBtn"
+                    android:onClick="onClickRadioBtn"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/hamburger"/>
                 <RadioButton
                     android:id="@+id/buritoRadioBtn"
+                    android:onClick="onClickRadioBtn"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/burito"/>
                 <RadioButton
                     android:id="@+id/sandwichRadioBtn"
+                    android:onClick="onClickRadioBtn"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/sandwich"/>
                 <RadioButton
                     android:id="@+id/korchickenRadioBtn"
+                    android:onClick="onClickRadioBtn"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/korchicken"/>
@@ -103,6 +110,8 @@
                 android:text="전화번호" />
 
             <EditText
+                android:hint="-빼고 입력"
+                android:id="@+id/telEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -119,6 +128,8 @@
                 android:text="1번 메뉴" />
 
             <EditText
+                android:hint="메뉴명(가격)"
+                android:id="@+id/menu1EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -135,6 +146,9 @@
                 android:text="2번 메뉴" />
 
             <EditText
+                android:hint="메뉴명(가격)"
+
+                android:id="@+id/menu2EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -151,6 +165,8 @@
                 android:text="3번 메뉴" />
 
             <EditText
+                android:hint="메뉴명(가격)"
+                android:id="@+id/menu3EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -168,6 +184,7 @@
                 android:text="홈페이지" />
 
             <EditText
+                android:id="@+id/homepageEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -181,11 +198,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:onClick="onClickCancelBtn"
             android:text="취소"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
+            android:onClick="onClickConfirmBtn"
             android:text="추가"
             android:layout_weight="1"
             android:layout_width="wrap_content"
